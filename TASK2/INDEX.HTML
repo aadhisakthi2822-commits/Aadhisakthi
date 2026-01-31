@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+
+    <link rel="stylesheet" href="CSS.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>Quote Generator</h1>
+        
+        <div class="quote-box">
+            <div class="quote" id="quote">Click button to get a quote!</div>
+            <div class="author" id="author"></div>
+            <div class="category" id="category" style="display:none;"></div>
+        </div>
+
+        <button onclick="getRandomQuote()"> Get Random Quote</button>
+        <button onclick="getCategoryQuote()"> Get Category Quote</button>
+
+        <div class="stats">
+            Quotes Generated: <strong id="count">0</strong>
+        </div>
+    </div>
+
+    <script src="JS.JS"></script>
+</body>
+</html>
