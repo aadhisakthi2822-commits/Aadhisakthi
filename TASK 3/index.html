@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Product Cart</h1>
+    <form id="product-form">
+        <label>Product Name:</label>
+        <input type="text" id="name" required>
+        <label>Price:</label>
+        <input type="number" id="price" step="0.01" required>
+        <label>Quantity:</label>
+        <input type="number" id="quantity" step="1" required>
+        <button id="add-btn">Add to Cart</button>
+    </form>
+
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Amount:</td>
+                <td id="total-amount">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
